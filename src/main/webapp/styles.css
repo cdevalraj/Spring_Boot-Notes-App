@@ -1,0 +1,85 @@
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 10vh;
+    background: black;
+    color: white;
+    font-size: 22px;
+    font-family: sans-serif;
+}
+
+body {
+    counter-reset: Serial;
+    background-color: #FFDEE9;
+	background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 150%);
+	height:100vh;
+
+}
+
+.button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 15px 0;
+    margin: 8px 25%;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: left;
+}
+
+h1 {
+    text-align: center;
+}
+
+a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+}
+
+.btn {
+    color: darkorange;
+}
+
+.btn:hover {
+    color: aquamarine;
+}
+
+.forms * {
+    vertical-align: top;
+}
+
+table {
+    border-collapse: collapse;
+    width: 50%;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+tr td:first-child:before {
+    counter-increment: Serial;
+    content: counter(Serial);
+}
+
+footer {
+    position: fixed;
+    padding: 10px 10px 0px 10px;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background: grey;
+}
